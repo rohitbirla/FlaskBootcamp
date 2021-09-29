@@ -1,0 +1,13 @@
+{% extends "ProjectBase.html" %}
+{% block content %}
+    <div class='jumbotron'>
+        <h1>Please provide a username(that meets requirements)</h1>
+
+        <form action="{{url_for('ProjectIndex')}}">
+            <label for="username">Username:</label>
+            <input type="text" name="username">
+            <input type="submit", value="Submit Form">
+        
+        </form>
+    </div>
+{% endblock %}
